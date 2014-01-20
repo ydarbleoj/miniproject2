@@ -1,0 +1,13 @@
+<div class="results">
+
+	<h1 class='results-title'>Movie Results</h1>
+
+		 <% @parsed["Search"].map do |x| %>
+	<div class="movie_results">
+		 <li class='movie-results'><a href="/movie/<%="#{x['imdbID']}"%>"><span> <%="#{x["Title"]}"%> - <%="#{x["Year"]}"%> </span></a></li>
+		 <%end%>
+	</div>
+	<div class="new_search">
+		<a href="/">New Search</a>
+	</div>
+</div>

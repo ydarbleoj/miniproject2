@@ -1,0 +1,20 @@
+<div class="display_poster">
+
+<h1 class='poster'>Movie Poster</h1>
+	<div class='poster_results'>
+         <img src=" <%= @search_id["Poster"] %>">
+	</div>
+	<div class="details">
+		<li class="movie-title"><span><%= @search_id["Title"] %></span></li>
+		<li><span>Plot</span><br><%= @search_id["Plot"] %></li>
+		<li><span>Release Date</span><br><%= @search_id["Released"] %></li>
+		<li><span>Rated</span><br><%= @search_id["Rated"] %></li>
+		<li><span>Runtime</span><br><%= @search_id["Runtime"] %></li> 
+		<li><span>Genre</span><br><%= @search_id["Genre"] %></li> 
+		<li><span>Director</span><br><%= @search_id["Director"] %></li>
+		<li><span>Actors</span><br><%= @search_id["Actors"] %></li>
+	</div>
+	<div class='new_search'>
+		<a href="/">New Search</a>
+	</div>
+</div>
